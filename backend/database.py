@@ -13,16 +13,3 @@ def get_user_from_db(user_id: str):
     except ClientError as e:
         print(f"資料庫連線錯誤: {e.response['Error']['Message']}")
         return None
-    
-def update_user_photo(user_id: str, s3_url: str):
-    try:
-        table.update_item(
-            Key={'id': user_id},
-            UpdateExpression="set photoUrl = :url",
-            ExpressionAttributeValues={':url': s3_url},
-            ReturnValues="UPDATED_NEW"
-        )
-        return True
-    except ClientError as e:
-        print(f"更新失敗: {e}")
-        return False
