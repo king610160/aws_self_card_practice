@@ -1,0 +1,24 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+.python-version
+
+
+# Other
+.python-version
+
+# mac
+.DS_Store
+
+# terraform
+.terraform
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.backup
