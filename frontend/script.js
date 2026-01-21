@@ -1,5 +1,7 @@
-// 模擬 API 網址 (未來換成你的 API Gateway 網址)
+// 寫入 Gateway API 網址
 const API_URL = 'https://u23zgsvkpe.execute-api.ap-northeast-1.amazonaws.com';
+
+// 寫入 Cloudfront 網址
 const CDN_BASE_URL = "https://djns63luwoway.cloudfront.net/"
 
 async function fetchUserProfile() {
